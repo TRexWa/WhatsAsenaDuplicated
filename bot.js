@@ -88,7 +88,7 @@ async function whatsAsena () {
             const { infotr, infoen, infoes, infopt, infoid, infoaz, infohi, infoml, inforu} = ann.data.announcements          
             if (infotr !== '' && config.LANG == 'TR') {
                 while (getGMTh == 19 && getGMTm == 1) { 
-                    return conn.sendMessage(conn.user.jid, '[ ```Günlük Duyurular``` ]\n\n' + infotr.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
+                    return conn.sendMessage(conn.user.jid, '[ ```❰🍁🔱  T Rex BOT  🔱🍁❱ Daily Announcements``` ]\n\n' + infotr.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
                 }
             }
             else if (infoaz !== '' && config.LANG == 'AZ') {
@@ -366,7 +366,7 @@ ${chalk.blue.italic('ℹ️ ❰🍁🔱  T Rex BOT  🔱🍁❱ Connecting to Wh
         }
         if (config.WORKTYPE == 'public') {
       
-            if (config.LANG == 'TR' || config.LANG == 'AZ') {
+            if (config.LANG == 'AZ' || config.LANG == 'TR') {
                 if (config.FULLEVA == 'true') {
                     await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
                 } else {
@@ -421,7 +421,7 @@ ${chalk.blue.italic('ℹ️ ❰🍁🔱  T Rex BOT  🔱🍁❱ Connecting to Wh
             }
         }
         else if (config.WORKTYPE == 'private') { 
-            if (config.LANG == 'TR' || config.LANG == 'AZ') { 
+            if (config.LANG == 'AZ' || config.LANG == 'TR') { 
                 if (config.FULLEVA == 'true') {
                     await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
                 } else {
@@ -476,7 +476,7 @@ ${chalk.blue.italic('ℹ️ ❰🍁🔱  T Rex BOT  🔱🍁❱ Connecting to Wh
         }
         else if (config.WORKTYPE == ' private' || config.WORKTYPE == 'Private' || config.WORKTYPE == ' Private' || config.WORKTYPE == 'privaye' || config.WORKTYPE == ' privaye' || config.WORKTYPE == ' prigate' || config.WORKTYPE == 'prigate' || config.WORKTYPE == 'priavte' || config.WORKTYPE == ' priavte' || config.WORKTYPE == 'PRİVATE' || config.WORKTYPE == ' PRİVATE' || config.WORKTYPE == 'PRIVATE' || config.WORKTYPE == ' PRIVATE') {
 
-            if (config.LANG == 'TR' || config.LANG == 'AZ') {
+            if (config.LANG == 'AZ' || config.LANG == 'TR') {
 
                 await conn.sendMessage(
                     conn.user.jid,
@@ -501,7 +501,7 @@ ${chalk.blue.italic('ℹ️ ❰🍁🔱  T Rex BOT  🔱🍁❱ Connecting to Wh
             }
         }
         else if (config.WORKTYPE == ' public' || config.WORKTYPE == 'Public' || config.WORKTYPE == ' Public' || config.WORKTYPE == 'publoc' || config.WORKTYPE == ' Publoc' || config.WORKTYPE == 'pubcli' || config.WORKTYPE == ' pubcli' || config.WORKTYPE == 'PUBLİC' || config.WORKTYPE == ' PUBLİC' || config.WORKTYPE == 'PUBLIC' || config.WORKTYPE == ' PUBLIC' || config.WORKTYPE == 'puvlic' || config.WORKTYPE == ' puvlic' || config.WORKTYPE == 'Puvlic' || config.WORKTYPE == ' Puvlic') {
-            if (config.LANG == 'TR' || config.LANG == 'AZ') {
+            if (config.LANG == 'AZ' || config.LANG == 'TR') {
                 await conn.sendMessage(
                     conn.user.jid,
                     '_Görünüşe Göre Public Moduna Geçmek İstiyorsun! Maalesef_ *WORK_TYPE* _Anahtarın Yanlış!_ \n_Merak Etme! Senin İçin Doğrusunu Bulmaya Çalışıyorum.._', MessageType.text
@@ -525,7 +525,7 @@ ${chalk.blue.italic('ℹ️ ❰🍁🔱  T Rex BOT  🔱🍁❱ Connecting to Wh
             }
         }
         else {
-            if (config.LANG == 'TR' || config.LANG == 'AZ') {
+            if (config.LANG == 'AZ' || config.LANG == 'TR') {
                 return await conn.sendMessage(
                     conn.user.jid,
                     '_Girdiğin_ *WORK_TYPE* _Anahtarı Bulunamadı!_ \n_Lütfen_ ```.setvar WORK_TYPE:private``` _Yada_ ```.setvar WORK_TYPE:public``` _Komutunu Kullanın!_', MessageType.text
@@ -655,7 +655,7 @@ ${chalk.blue.italic('ℹ️ ❰🍁🔱  T Rex BOT  🔱🍁❱ Connecting to Wh
                         catch (error) {
                             if (config.NOLOG == 'true') return;
 
-                            if (config.LANG == 'TR' || config.LANG == 'AZ') {
+                            if (config.LANG == 'AZ' || config.LANG == 'TR') {
                                 await conn.sendMessage(conn.user.jid, '*-- HATA RAPORU [ ❰🍁🔱  T Rex BOT  🔱🍁❱ ] --*' + 
                                     '\n *❰🍁🔱  T Rex BOT  🔱🍁❱  bir hata gerçekleşti!*'+
                                     '\n_Bu hata logunda numaranız veya karşı bir tarafın numarası olabilir. Lütfen buna dikkat edin!_' +
