@@ -17,7 +17,7 @@
             "required": false
         },
         "LANGUAGE": {
-            "description": "සින්හල භාශාව සදහා TR ලෙස තබන්න..Bot language. Azerice => az, English => en, Türkçe => tr, Malayalam => ml, Hindi => HI, Indonesia => ID, Español => ES, Portuguese => pt, Russian => ru",
+            "description": "සින්හල භාශාව සදහා TR ලෙස තබන්න..Bot language.  English => en.",
             "required": true,
             "value": "TR"
         },
